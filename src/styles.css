@@ -1,0 +1,173 @@
+:root {
+  font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+  color: #16324f;
+  background: #eef9ff;
+  font-synthesis: none;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+}
+.app-shell {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f8fdff 0%, #e7f6ff 100%);
+}
+.app-navbar {
+  background: #fff;
+  border-bottom: 1px solid #d9edf8;
+  box-shadow: 0 4px 18px rgba(28, 119, 166, 0.07);
+}
+.navbar-brand {
+  color: #12638b;
+  font-size: 1.35rem;
+  font-weight: 800;
+}
+.navbar-brand:hover {
+  color: #0d5275;
+}
+.brand-mark {
+  display: grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  color: #fff;
+  background: #5bc0eb;
+  border-radius: 12px;
+}
+.navbar-text {
+  color: #7392a6;
+  font-size: 0.9rem;
+}
+.page-heading h1 {
+  max-width: 620px;
+  margin: 0;
+  color: #123c5a;
+  font-size: clamp(2rem, 5vw, 3.35rem);
+  line-height: 1.05;
+  letter-spacing: 0;
+}
+.page-heading .lead {
+  max-width: 560px;
+  color: #618097;
+}
+.eyebrow {
+  margin-bottom: 0.65rem;
+  color: #1593c5;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+.calculator-card {
+  padding: clamp(1.25rem, 4vw, 2.25rem);
+  background: #fff;
+  border: 1px solid #dbeef7;
+  border-radius: 18px;
+  box-shadow: 0 18px 45px rgba(46, 129, 170, 0.11);
+}
+.form-label {
+  color: #234e69;
+}
+.form-control,
+.input-group-text {
+  border-color: #c9e4f0;
+}
+.form-control:focus {
+  border-color: #5bc0eb;
+  box-shadow: 0 0 0 0.25rem rgba(91, 192, 235, 0.18);
+}
+.input-group-text {
+  color: #6b8da1;
+  background: #f5fbfe;
+}
+.btn-primary {
+  --bs-btn-bg: #1593c5;
+  --bs-btn-border-color: #1593c5;
+  --bs-btn-hover-bg: #0e789f;
+  --bs-btn-hover-border-color: #0e789f;
+  padding: 0.75rem 1.25rem;
+  font-weight: 700;
+}
+.help-details {
+  position: relative;
+}
+.help-details summary {
+  display: grid;
+  place-items: center;
+  width: 25px;
+  height: 25px;
+  color: #1998c9;
+  border: 1px solid #9ed9ed;
+  border-radius: 50%;
+  cursor: pointer;
+  list-style: none;
+}
+.help-details summary::-webkit-details-marker {
+  display: none;
+}
+.help-popover {
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  width: 230px;
+  margin-top: 0.5rem;
+  padding: 0.75rem;
+  color: #385d72;
+  background: #f1fbff;
+  border: 1px solid #bde3f0;
+  border-radius: 10px;
+  box-shadow: 0 8px 18px rgba(38, 116, 151, 0.13);
+  font-size: 0.82rem;
+  font-weight: 400;
+}
+.result-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.15rem;
+  border: 1px solid;
+  border-radius: 14px;
+}
+.result-good {
+  color: #176a4a;
+  background: #effbf5;
+  border-color: #a9e5c8;
+}
+.result-average {
+  color: #725b10;
+  background: #fff9e7;
+  border-color: #f1dc8b;
+}
+.result-warning {
+  color: #8a3d36;
+  background: #fff1ef;
+  border-color: #f1b7b0;
+}
+.result-emoji {
+  font-size: 2.2rem;
+  line-height: 1;
+}
+.result-label {
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  opacity: 0.7;
+}
+.disclaimer {
+  color: #7392a6;
+  font-size: 0.8rem;
+  text-align: center;
+}
+@media (max-width: 575px) {
+  .navbar-text {
+    display: none;
+  }
+  main.container {
+    padding-top: 2rem !important;
+  }
+  .calculator-card {
+    border-radius: 14px;
+  }
+}
