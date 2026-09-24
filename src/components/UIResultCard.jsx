@@ -9,7 +9,6 @@ function UIResultCard({ result }) {
             {item.emoji}
           </div>
           <div>
-            <p className="result-label mb-1">Seu resultado</p>
             <h2 className="h4 mb-1">
               {item.name} {item.value}
               {item.name === "TMB" && " kcal"}
